@@ -27,7 +27,7 @@ jobs:
           versoin: 12
  
       - name: Creating Project build
-        run:  npm run  build 
+        run:  npm run build 
 
       - name: Surge installation
         run:  npm install --global surge
