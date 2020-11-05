@@ -24,7 +24,7 @@ jobs:
       - name: Node js installation
         uses: actions/setup-node@v2-beta
         with:
-          versoin: 12
+          versoin: 14
  
 #       - name: Creating Project build
 #         run:  npm run build 
