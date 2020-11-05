@@ -38,7 +38,7 @@ jobs:
         run:  npm install -g surge
 
       - name: Deplying site on surge...
-        run: surge ./src http://practice_of_bootcamp.surge.sh --token ${{secrets.SURGE_TOKEN}} 
+        run: surge ./build  http://practice_of_bootcamp.surge.sh --token ${{secrets.SURGE_TOKEN}} 
        
     
 
