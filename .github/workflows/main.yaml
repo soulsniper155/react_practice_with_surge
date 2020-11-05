@@ -22,20 +22,26 @@ jobs:
       - name: Node js installation
         uses: actions/setup-node@v2-beta
         with:
-          versoin: 14
+          versoin: 14 
+      
+      - name: Installing Surge  
+        run:  npm install --global surge
+      
       - name: Yarn Installation
         uses: Borales/actions-yarn@v2.1.0
         with:
           cmd: install
+      
       - name: Start building ...
         run: yarn build
 
  
 #       - name: Creating Project build
 #         run:  npm run build 
+     
 
-      - name: Surge installation
-        run:  npm install --global surge
+#       - name: Surge installation
+#         run:  npm install --global surge
 
       - name: Deplying site on surge...
         run: surge ./build  http://practice_of_bootcamp.surge.sh --token ${{secrets.SURGE_TOKEN}} 
