@@ -28,7 +28,7 @@ jobs:
         with:
           cmd: install
       - name: Start building ...
-        uses: yarn build
+        run: yarn build
 
  
 #       - name: Creating Project build
