@@ -25,6 +25,13 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           versoin: 14
+      - name: Yarn Installation
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+                cmd: install
+      - name: Start building ...
+        uses: yarn build
+
  
 #       - name: Creating Project build
 #         run:  npm run build 
